@@ -7,6 +7,16 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
+  {
+    path: 'error',
+    loadChildren: () =>
+      import('./error/error.module').then((m) => m.ErrorModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'error/page-not-found',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({

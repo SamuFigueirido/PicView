@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+/**
+ * Routes of the app
+ */
 const routes: Routes = [
   {
     path: '',
@@ -18,6 +21,12 @@ const routes: Routes = [
   },
 ];
 
+/**
+ * @NgModule decorator with its metadata
+ * imports: imports the RouterModule and passes the routes constant to the forRoot() method
+ * exports: exports the RouterModule to be used by the AppModule
+ * @description The class that handles the routing of the app module
+ */
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],

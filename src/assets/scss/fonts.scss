@@ -1,0 +1,99 @@
+// Regular
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Italic
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+// Bold
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Bold Italic
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+// Light
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+// Light Italic
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+// Medium
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Medium Italic
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+// Thin
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+// Thin Italic
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+// Ultra Light
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+// Ultra Light Italic
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+* {
+  font-family: "Helvetica Neue", sans-serif;
+}

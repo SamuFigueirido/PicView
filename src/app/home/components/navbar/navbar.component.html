@@ -1,0 +1,25 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark py-0 px-2 px-md-5">
+    <div class="container-fluid">
+        <div class="logo-toggler-container d-flex align-items-center">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="px-4" href="/">
+                <img class="mb-lg-3" src="/assets/img/logo.png" height="40" alt="" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li *ngFor="let page of pages" class="nav-item">
+                    <a class="nav-link px-0 py-2 mx-2 my-0 {{page.active ? 'active' : 'disabled'}}" aria-current="page"
+                        [href]="page.active && page.route">
+                        {{page.translation | translate}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

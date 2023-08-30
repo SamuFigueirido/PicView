@@ -1,4 +1,26 @@
 {
+    "HOME": {
+        "pages": {
+            "home": {
+                "title": "Inicio"
+            },
+            "photos": {
+                "title": "Fotos"
+            },
+            "randomPhoto": {
+                "title": "Foto aleatoria"
+            },
+            "collections": {
+                "title": "Colecciones"
+            },
+            "about": {
+                "title": "Acerca de"
+            },
+            "contact": {
+                "title": "Contacto"
+            }
+        }
+    },
     "ERROR": {
         "pageNotFound": {
             "text": "Lo sentimos, no hemos encontrado la página que buscas",

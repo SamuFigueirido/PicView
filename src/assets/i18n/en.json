@@ -1,4 +1,26 @@
 {
+    "HOME": {
+        "pages": {
+            "home": {
+                "title": "Home"
+            },
+            "photos": {
+                "title": "Photos"
+            },
+            "randomPhoto": {
+                "title": "Random Photo"
+            },
+            "collections": {
+                "title": "Collections"
+            },
+            "about": {
+                "title": "About"
+            },
+            "contact": {
+                "title": "Contact"
+            }
+        }
+    },
     "ERROR": {
         "pageNotFound": {
             "text": "We apologize, but the page you are looking for does not exist.",

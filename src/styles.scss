@@ -3,12 +3,19 @@
 
 :root {
   --primary-color: #313840;
-  --secondary-color: #4eaab3;
+  --secondary-color: #d9ff00;
   --background-color: #000;
   --font-color: #f5f5f5;
+  --selected-color: #d9ff00;
+  --font-selected-color: #000;
 }
 
 body {
   background-color: var(--background-color) !important;
   color: var(--font-color) !important;
+
+  ::selection {
+    background-color: var(--selected-color) !important;
+    color: var(--font-selected-color) !important;
+  }
 }

@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
-import { TranslateModule } from '@ngx-translate/core';
-
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { SharedModule } from '../shared/shared.module';
 
 /**
  * @NgModule decorator with its metadata
  * declarations: declares the components and pipes that belong to this module
- * imports: imports the CommonModule, HomeRoutingModule and TranslateModule
- * exports: exports the NavbarComponent
+ * imports: imports the HomeRoutingModule and SharedModule
  * @description The class that handles the home module
  */
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent],
-  imports: [CommonModule, HomeRoutingModule, TranslateModule],
-  exports: [NavbarComponent],
+  declarations: [HomeComponent],
+  imports: [
+    HomeRoutingModule,
+    SharedModule
+  ],
 })
 export class HomeModule {}

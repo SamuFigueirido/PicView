@@ -9,9 +9,9 @@ export class NavbarComponent {
   pages = [
     { name: 'Home', translation: 'HOME.pages.home.title', route: '/', active: true },
     {
-      name: 'Photos',
-      translation: 'HOME.pages.photos.title',
-      route: '/photos',
+      name: 'Search',
+      translation: 'HOME.pages.search.title',
+      route: '/search',
       active: true,
     },
     {

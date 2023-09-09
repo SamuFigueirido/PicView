@@ -4,8 +4,8 @@
             "home": {
                 "title": "Inicio"
             },
-            "photos": {
-                "title": "Fotos"
+            "search": {
+                "title": "Búsqueda"
             },
             "randomPhoto": {
                 "title": "Foto aleatoria"

@@ -4,8 +4,8 @@
             "home": {
                 "title": "Home"
             },
-            "photos": {
-                "title": "Photos"
+            "search": {
+                "title": "Search"
             },
             "randomPhoto": {
                 "title": "Random Photo"

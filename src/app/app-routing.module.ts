@@ -15,6 +15,11 @@ const routes: Routes = [
       import('./search/search.module').then((m) => m.SearchModule),
   },
   {
+    path: 'random-photo',
+    loadChildren: () =>
+      import('./random/random.module').then((m) => m.RandomModule),
+  },
+  {
     path: 'error',
     loadChildren: () =>
       import('./error/error.module').then((m) => m.ErrorModule),

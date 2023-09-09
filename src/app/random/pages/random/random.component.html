@@ -1,0 +1,9 @@
+<navbar />
+<div class="image-container" *ngIf="image">
+    <image-publication [image]="image"></image-publication>
+</div>
+<spinner *ngIf="!image" />
+<offcanvas-image [image]="image" />
+<fab-button (clickEvent)="getRandomImage()">
+    <img src="../../../../assets/img/refresh.png" class="refresh" alt="refresh" />
+</fab-button>

@@ -6,7 +6,8 @@
             <p class="m-0 fw-semibold">{{ '@' + image.user.username }}</p>
         </div>
     </div>
-    <img [src]="image.urls.regular" class="img img-fluid" alt="image" />
+    <img [src]="image.urls.regular" class="img img-fluid" alt="image" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasImage" aria-controls="offcanvasImage" (click)="setSelectedImage()" />
     <div class="likes d-flex flex-column justify-content-center">
         <img src="../../../../assets/img/like.png" class="like" alt="likes" />
         <p class="mb-0 fw-semibold text-center">{{ image.likes }}</p>

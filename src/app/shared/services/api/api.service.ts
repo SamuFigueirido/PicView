@@ -26,4 +26,23 @@ export class ApiService {
         return data;
       });
   }
+
+  /**
+   * Function to get a random image from the API
+   * @returns a promise with the image
+   */
+  getRandomImage() {
+    return fetch(
+      `${environment.api}photos/random?client_id=${environment.accessKey}`,
+      {
+        method: 'GET',
+      }
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        return data;
+      });
+  }
 }

@@ -1,0 +1,66 @@
+.img-user-container {
+  position: relative;
+  max-width: 800px;
+
+  .user-info {
+    cursor: pointer;
+
+    .user-img {
+      width: 44px;
+      height: 44px;
+    }
+
+    .name {
+      letter-spacing: 3px;
+    }
+  }
+
+  .img {
+    cursor: pointer;
+    max-height: 600px;
+    object-fit: contain;
+  }
+
+  .likes {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    .like {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      font-size: 12px;
+      text-shadow: 0 0 3px #000, 0 0 5px #000;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .img-user-container {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .img-user-container {
+    max-width: 450px !important;
+  }
+
+  .img {
+    max-height: 400px !important;
+  }
+}
+
+@media (max-width: 995px) {
+  .img-user-container {
+    max-width: 600px !important;
+  }
+
+  .img {
+    max-height: 500px !important;
+  }
+}

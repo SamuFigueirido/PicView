@@ -1,0 +1,14 @@
+<div class="img-user-container my-5 mx-auto d-flex flex-column justify-content-center">
+    <div class="user-info container-fluid my-4 pb-3 border-bottom border-white d-flex flex-row align-items-center">
+        <img [src]="image.user.profile_image.small" class="user-img rounded-circle img-thumbnail me-3" alt="user" />
+        <div>
+            <h5 class="name m-0">{{ image.user.name }}</h5>
+            <p class="m-0 fw-semibold">{{ '@' + image.user.username }}</p>
+        </div>
+    </div>
+    <img [src]="image.urls.regular" class="img img-fluid" alt="image" />
+    <div class="likes d-flex flex-column justify-content-center">
+        <img src="../../../../assets/img/like.png" class="like" alt="likes" />
+        <p class="mb-0 fw-semibold text-center">{{ image.likes }}</p>
+    </div>
+</div>

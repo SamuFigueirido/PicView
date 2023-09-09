@@ -21,10 +21,24 @@
             }
         }
     },
+    "IMAGE": {
+        "noData": {
+            "noDescription": "No description"
+        }
+    },
     "ERROR": {
         "pageNotFound": {
             "text": "We apologize, but the page you are looking for does not exist.",
             "btn": "Go to the home page"
+        }
+    },
+    "SETTINGS": {
+        "language": {
+            "title": "Language",
+            "name": "English",
+            "id": "en",
+            "localeDate": "en-US",
+            "flag": "assets/img/flags/en.png"
         }
     }
 }

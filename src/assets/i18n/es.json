@@ -21,10 +21,24 @@
             }
         }
     },
+    "IMAGE": {
+        "noData": {
+            "noDescription": "Sin descripción"
+        }
+    },
     "ERROR": {
         "pageNotFound": {
             "text": "Lo sentimos, no hemos encontrado la página que buscas",
             "btn": "Volver a la página de inicio"
+        }
+    },
+    "SETTINGS": {
+        "language": {
+            "title": "Idioma",
+            "name": "Español",
+            "id": "es",
+            "localeDate": "es-ES",
+            "flag": "assets/img/flags/es.png"
         }
     }
 }

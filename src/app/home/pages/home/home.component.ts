@@ -7,7 +7,6 @@ import { ApiService } from '../../../shared/services/api/api.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-
   // Infinite scroll variables
   throttle = 500;
   scrollDistance = 1;
@@ -15,6 +14,9 @@ export class HomeComponent {
 
   // Images array
   images?: any[];
+
+  // Selected image
+  selectedImage?: any;
 
   // Page number
   page = 1;
@@ -42,5 +44,13 @@ export class HomeComponent {
         await this.apiSvc.getImages(this.page).then((data) => data)
       );
     }
+  }
+
+  /**
+   * Function to set the selected image
+   * @param image to set as selected
+   */
+  setSelectedImage(image: any) {
+    this.selectedImage = image;
   }
 }

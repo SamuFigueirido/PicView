@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { SearchComponent } from './pages/search/search.component';
 import { RouterModule, Routes } from '@angular/router';
 

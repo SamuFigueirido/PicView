@@ -28,6 +28,11 @@ export class OffcanvasImageComponent implements OnInit {
     this.removeImage.emit(true);
   }
 
+  /**
+   * Function to format the date
+   * @param fulldate to format as a date
+   * @returns formatted date
+   */
   formatDate(fulldate: string) {
     const date = new Date(fulldate);
     return (

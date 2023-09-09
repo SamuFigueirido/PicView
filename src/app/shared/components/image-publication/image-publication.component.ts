@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'image-publication',
@@ -8,5 +8,14 @@ import { Component, Input } from '@angular/core';
 export class ImagePublicationComponent {
   @Input() image: any;
 
+  @Output() setImageSelectedEvent = new EventEmitter<any>();
+
   constructor() {}
+
+  /**
+   * Function to set and emit to the parent component the selected image
+   */
+  setSelectedImage() {
+    this.setImageSelectedEvent.emit(this.image);
+  }
 }

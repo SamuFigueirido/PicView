@@ -11,9 +11,15 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { ImagePublicationComponent } from './components/image-publication/image-publication.component';
+import { OffcanvasImageComponent } from './components/offcanvas-image/offcanvas-image.component';
 
 @NgModule({
-  declarations: [NavbarComponent, SpinnerComponent, ImagePublicationComponent],
+  declarations: [
+    NavbarComponent,
+    SpinnerComponent,
+    ImagePublicationComponent,
+    OffcanvasImageComponent,
+  ],
   imports: [CommonModule, TranslateModule, InfiniteScrollModule],
   exports: [
     CommonModule,
@@ -22,6 +28,7 @@ import { ImagePublicationComponent } from './components/image-publication/image-
     NavbarComponent,
     SpinnerComponent,
     ImagePublicationComponent,
+    OffcanvasImageComponent,
   ],
 })
 export class SharedModule {}

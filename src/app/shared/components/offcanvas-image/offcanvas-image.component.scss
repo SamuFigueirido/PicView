@@ -1,0 +1,71 @@
+.offcanvas {
+  top: 0;
+  height: auto;
+  background-color: var(--primary-color) !important;
+  color: var(--font-color) !important;
+
+  .offcanvas-header {
+    height: 60px;
+
+    .location {
+      a {
+        color: var(--font-color);
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: inline-block;
+        position: relative;
+        letter-spacing: 2px;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: var(--secondary-color);
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+
+      .location-img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    button.btn-close {
+      filter: invert(86%) sepia(89%) saturate(1263%) hue-rotate(10deg)
+        brightness(100%) contrast(103%);
+    }
+  }
+
+  .offcanvas-body {
+    .img-full {
+      max-height: calc(100% - 60px - 2rem);
+      margin: 0 auto;
+    }
+
+    .likes {
+      .like {
+        width: 30px;
+        height: 30px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

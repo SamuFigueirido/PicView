@@ -1,0 +1,28 @@
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasImage" data-bs-backdrop="static">
+    <div class="offcanvas-header">
+        <div class="location d-flex align-items-center">
+            <img *ngIf="image" src="../../../../assets/img/location.png" class="location-img me-2" alt="location" />
+            <a *ngIf="image" target=”_blank” [href]="'https://www.google.com/search?q=' + image.user.location"
+                class="m-0 nav-link">{{image.user.location}}</a>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+            (click)="removeSelectedImage()"></button>
+    </div>
+    <div *ngIf="image" class="offcanvas-body d-flex flex-column">
+        <img [src]="image.urls.full" class="img-full img-fluid" alt="image-full" />
+        <div class="mt-4 px-sm-2 px-md-4 px-lg-5 border-top border-white">
+            <div class="d-flex justify-content-between align-items-start">
+                <p *ngIf="image.description" class="mb-0 me-3 py-4">{{ image.description }}</p>
+                <p *ngIf="!image.description" class="mb-0 me-3 py-4 fst-italic">{{ 'IMAGE.noData.noDescription' | translate }}</p>
+                <div class="likes py-4 d-flex flex-row align-items-center">
+                    <p class="m-0 pe-2 fw-semibold text-center">{{ image.likes }}</p>
+                    <img src="../../../../assets/img/like.png" class="like" alt="likes" />
+                </div>
+            </div>
+            <p class="mb-0 me-3 py-4">{{ formatDate(image.created_at) }}</p>
+        </div>
+    </div>
+    <div *ngIf="!image" class="offcanvas-body">
+        <spinner />
+    </div>
+</div>

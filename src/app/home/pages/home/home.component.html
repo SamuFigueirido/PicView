@@ -1,1 +1,9 @@
 <navbar />
+<div infiniteScroll infinite-scroll [infiniteScrollDistance]="scrollDistance"
+    [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()">
+    <div class="images-results" *ngIf="images">
+        <image-publication *ngFor="let image of images" [image]="image"
+            (setImageSelectedEvent)="setSelectedImage($event)"></image-publication>
+    </div>
+    <spinner *ngIf="!images" />
+</div>

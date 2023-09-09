@@ -10,6 +10,11 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
+    path: 'search',
+    loadChildren: () =>
+      import('./search/search.module').then((m) => m.SearchModule),
+  },
+  {
     path: 'error',
     loadChildren: () =>
       import('./error/error.module').then((m) => m.ErrorModule),

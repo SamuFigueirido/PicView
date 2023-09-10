@@ -12,14 +12,37 @@
         <img [src]="image.urls.full" class="img-full img-fluid" alt="image-full" />
         <div class="mt-4 px-sm-2 px-md-4 px-lg-5 border-top border-white">
             <div class="d-flex justify-content-between align-items-start">
-                <p *ngIf="image.description" class="mb-0 me-3 py-4">{{ image.description }}</p>
-                <p *ngIf="!image.description" class="mb-0 me-3 py-4 fst-italic">{{ 'IMAGE.noData.noDescription' | translate }}</p>
-                <div class="likes py-4 d-flex flex-row align-items-center">
+                <p *ngIf="image.description" class="mb-0 me-3 pt-4 pb-2">{{ image.description }}</p>
+                <p *ngIf="!image.description" class="mb-0 me-3 pt-4 pb-2 fst-italic">{{ 'IMAGE.noData.noDescription' |
+                    translate }}</p>
+                <div class="likes pt-4 pb-2 d-flex flex-row align-items-center">
                     <p class="m-0 pe-2 fw-semibold text-center">{{ image.likes }}</p>
                     <img src="../../../../assets/img/like.png" class="like" alt="likes" />
                 </div>
             </div>
-            <p class="mb-0 me-3 py-4">{{ formatDate(image.created_at) }}</p>
+            <p class="mb-0 me-3 pt-2 pb-4">{{ formatDate(image.created_at) }}</p>
+            <div class="user-info container-fluid my-4 pb-3 d-flex flex-row align-items-center">
+                <img [src]="image.user.profile_image.large" class="user-img rounded-circle img-thumbnail me-3"
+                    alt="user" />
+                <div>
+                    <h4 class="name m-0">{{ image.user.name }}</h4>
+                    <p class="m-0 fw-semibold fs-5 text">{{ '@' + image.user.username }}</p>
+                    <div class="social my-3 d-flex justify-content-between">
+                        <a *ngIf="image.user.instagram_username" target=”_blank”
+                            [href]="'https://www.instagram.com/' + image.user.instagram_username">
+                            <img src="../../../../assets/img/instagram.png" class="img-social" alt="image-full" />
+                        </a>
+                        <a *ngIf="image.user.twitter_username" target=”_blank”
+                            [href]="'https://www.twitter.com/' + image.user.twitter_username">
+                            <img src="../../../../assets/img/x.png" class="img-social" alt="image-full" />
+                        </a>
+                        <a *ngIf="image.user.portfolio_url" target=”_blank”
+                            [href]="image.user.portfolio_url">
+                            <img src="../../../../assets/img/web.png" class="img-social" alt="image-full" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div *ngIf="!image" class="offcanvas-body">

@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from './shared/services/language/language.service';
 
 @Component({
   selector: 'app-root',
   template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
-
   /**
    * Constructor of the class AppComponent
-   * @param translate TranslateService to translate the app to different languages
+   * @param translate LanguageService to set the initial language to the app
    */
-  constructor(public translate: TranslateService) {
-    translate.addLangs(['en', 'es']);
-    translate.setDefaultLang('en');
+  constructor(languageSvc: LanguageService) {
+    languageSvc.setInitialLanguage();
   }
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 /** TRANSLATE */
 import { TranslateModule } from '@ngx-translate/core';
@@ -24,11 +25,19 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     FabButtonComponent,
     SearchbarComponent,
   ],
-  imports: [CommonModule, TranslateModule, InfiniteScrollModule],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    InfiniteScrollModule,
+    ReactiveFormsModule,
+    FormsModule,
+  ],
   exports: [
     CommonModule,
     TranslateModule,
     InfiniteScrollModule,
+    ReactiveFormsModule,
+    FormsModule,
     NavbarComponent,
     SpinnerComponent,
     ImagePublicationComponent,

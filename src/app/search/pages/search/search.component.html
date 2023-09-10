@@ -2,3 +2,12 @@
 <div class="searchbar">
     <searchbar (searchEvent)="getSearchQuery($event)" />
 </div>
+<div infiniteScroll infinite-scroll [infiniteScrollDistance]="scrollDistance"
+    [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()">
+    <div *ngIf="images">
+        <image-publication *ngFor="let image of images" [image]="image"
+            (setImageSelectedEvent)="setSelectedImage($event)"></image-publication>
+    </div>
+    <offcanvas-image [image]="selectedImage" (removeImage)="setSelectedImage(null)" />
+    <spinner *ngIf="!images && showLoading" />
+</div>

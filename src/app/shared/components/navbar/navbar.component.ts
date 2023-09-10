@@ -27,12 +27,6 @@ export class NavbarComponent {
       active: false,
     },
     {
-      name: 'About',
-      translation: 'HOME.pages.about.title',
-      route: '/about',
-      active: false,
-    },
-    {
       name: 'Contact',
       translation: 'HOME.pages.contact.title',
       route: '/contact',

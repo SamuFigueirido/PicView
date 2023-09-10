@@ -55,11 +55,19 @@ form {
     border: none;
     outline: none;
     z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 
     img {
       height: 26px;
       width: 26px;
       object-fit: cover;
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
+      box-shadow: 0 0 1rem var(--secondary-color);
     }
   }
 }

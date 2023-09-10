@@ -26,6 +26,11 @@
             "noDescription": "No description"
         }
     },
+    "SEARCH": {
+        "title": "What are you looking for?",
+        "placeholder": "Type to search",
+        "required": "You must to type at least 3 characters"
+    },
     "ERROR": {
         "pageNotFound": {
             "text": "We apologize, but the page you are looking for does not exist.",

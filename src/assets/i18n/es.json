@@ -26,6 +26,11 @@
             "noDescription": "Sin descripción"
         }
     },
+    "SEARCH": {
+        "title": "¿Qué estás buscando?",
+        "placeholder": "Escribe para buscar",
+        "required": "Tienes que introducir al menos 3 caracteres"
+    },
     "ERROR": {
         "pageNotFound": {
             "text": "Lo sentimos, no hemos encontrado la página que buscas",

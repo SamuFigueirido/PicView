@@ -13,6 +13,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { ImagePublicationComponent } from './components/image-publication/image-publication.component';
 import { OffcanvasImageComponent } from './components/offcanvas-image/offcanvas-image.component';
 import { FabButtonComponent } from './components/fab-button/fab-button.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FabButtonComponent } from './components/fab-button/fab-button.component
     ImagePublicationComponent,
     OffcanvasImageComponent,
     FabButtonComponent,
+    SearchbarComponent,
   ],
   imports: [CommonModule, TranslateModule, InfiniteScrollModule],
   exports: [
@@ -32,6 +34,7 @@ import { FabButtonComponent } from './components/fab-button/fab-button.component
     ImagePublicationComponent,
     OffcanvasImageComponent,
     FabButtonComponent,
+    SearchbarComponent,
   ],
 })
 export class SharedModule {}

@@ -1,0 +1,12 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <h1 class="my-5 mx-3 text-center fw-bold text-uppercase">{{ 'SEARCH.title' | translate}}</h1>
+    <form (ngSubmit)="handleSubmit($event)" accept-charset="utf-8" role="search">
+        <input type="search" [formControl]="query" [placeholder]="'SEARCH.placeholder' | translate" autofocus />
+        <button type="submit">
+            <img src="../../../../assets/img/search.png" alt="Search" />
+        </button>
+    </form>
+    <div class="required">
+        {{ 'SEARCH.required' | translate}}
+    </div>
+</div>

@@ -1,6 +1,6 @@
 <navbar />
 <div class="searchbar">
-    <searchbar (searchEvent)="getSearchQuery($event)" />
+    <searchbar (searchEvent)="getSearchQuery($event)" [queryParam]="query" />
 </div>
 <div infiniteScroll infinite-scroll [infiniteScrollDistance]="scrollDistance"
     [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()">

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -6,10 +6,18 @@ import { FormControl, Validators } from '@angular/forms';
   templateUrl: './searchbar.component.html',
   styleUrls: ['./searchbar.component.scss'],
 })
-export class SearchbarComponent {
+export class SearchbarComponent implements OnInit {
+  @Input() queryParam?: string;
+
   query = new FormControl('', [Validators.required, Validators.minLength(3)]);
 
   @Output() searchEvent = new EventEmitter<string>();
+
+  ngOnInit(): void {
+    if (this.queryParam) {
+      this.query.setValue(this.queryParam);
+    }
+  }
 
   /**
    * Function to handle the submit event of the form

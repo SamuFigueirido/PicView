@@ -15,6 +15,7 @@ import { ImagePublicationComponent } from './components/image-publication/image-
 import { OffcanvasImageComponent } from './components/offcanvas-image/offcanvas-image.component';
 import { FabButtonComponent } from './components/fab-button/fab-button.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     OffcanvasImageComponent,
     FabButtonComponent,
     SearchbarComponent,
+    LanguageSelectorComponent,
   ],
   imports: [
     CommonModule,
@@ -44,6 +46,7 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     OffcanvasImageComponent,
     FabButtonComponent,
     SearchbarComponent,
+    LanguageSelectorComponent,
   ],
 })
 export class SharedModule {}

@@ -14,19 +14,19 @@ export class SearchComponent {
   scrollUpDistance = 2;
 
   // Images array
-  images?: any[];
+  images?: unknown[];
 
   // Selected image
-  selectedImage?: any;
+  selectedImage?: unknown;
 
   // Page number
   page = 1;
 
   // Query
-  query: string = '';
+  query = '';
 
   // Loading
-  showLoading: boolean = false;
+  showLoading = false;
 
   constructor(
     private activatedroute: ActivatedRoute,
@@ -93,7 +93,7 @@ export class SearchComponent {
    * Function to set the selected image
    * @param image to set as selected
    */
-  setSelectedImage(image: any) {
+  setSelectedImage(image: unknown) {
     this.selectedImage = image;
   }
 }

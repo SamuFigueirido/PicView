@@ -5,7 +5,6 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class ApiService {
-  constructor() {}
 
   /**
    * Function to get the images from the API

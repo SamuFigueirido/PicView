@@ -7,7 +7,7 @@ import { ApiService } from 'src/app/shared/services/api/api.service';
   styleUrls: ['./random.component.scss'],
 })
 export class RandomComponent {
-  image?: any;
+  image?: unknown;
 
   constructor(public apiSvc: ApiService) {
     this.getRandomImage();

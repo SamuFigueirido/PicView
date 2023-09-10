@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
@@ -9,8 +11,6 @@ export class ImagePublicationComponent {
   @Input() image: any;
 
   @Output() setImageSelectedEvent = new EventEmitter<any>();
-
-  constructor() {}
 
   /**
    * Function to set and emit to the parent component the selected image

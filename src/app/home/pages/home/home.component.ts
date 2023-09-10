@@ -13,10 +13,10 @@ export class HomeComponent {
   scrollUpDistance = 2;
 
   // Images array
-  images?: any[];
+  images?: unknown[];
 
   // Selected image
-  selectedImage?: any;
+  selectedImage?: unknown;
 
   // Page number
   page = 1;
@@ -50,7 +50,7 @@ export class HomeComponent {
    * Function to set the selected image
    * @param image to set as selected
    */
-  setSelectedImage(image: any) {
+  setSelectedImage(image: unknown) {
     this.selectedImage = image;
   }
 }

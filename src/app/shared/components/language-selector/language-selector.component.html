@@ -1,17 +1,17 @@
 <div class="dropdown">
     <a class="btn btn-secondary dropdown-toggle d-flex align-items-center" href="#" role="button"
         data-bs-toggle="dropdown" aria-expanded="false">
-        <img src='{{"SETTINGS.language.flag" | translate}}'>
+        <img src='{{"SETTINGS.language.flag" | translate}}' alt="flag">
         <span class="text-uppercase mx-1">{{'SETTINGS.language.id' | translate}}</span>
     </a>
 
     <ul class="dropdown-menu">
         <li *ngFor="let language of languages">
-            <a class="dropdown-item nav-link my-2 mx-4 py-1 d-flex align-items-center justify-content-start"
+            <button class="dropdown-item nav-link my-2 mx-4 py-1 d-flex align-items-center justify-content-start"
                 (click)="setLanguage(language.code)">
-                <img class="me-2" [src]='language.img'>
+                <img class="me-2" [src]='language.img' alt="flag">
                 <span>{{language.label}}</span>
-            </a>
+            </button>
         </li>
     </ul>
 </div>

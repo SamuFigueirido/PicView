@@ -1,3 +1,5 @@
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -10,12 +12,10 @@ export class OffcanvasImageComponent implements OnInit {
 
   @Output() removeImage = new EventEmitter<boolean>();
 
-  constructor() {}
-
   ngOnInit(): void {
     const offcanvasImage = document.getElementById('offcanvasImage');
     if (offcanvasImage) {
-      offcanvasImage.addEventListener('hidden.bs.offcanvas', (event) => {
+      offcanvasImage.addEventListener('hidden.bs.offcanvas', () => {
         this.image = null;
       });
     }

@@ -1,8 +1,8 @@
 {
-  "name": "pic-view",
-  "short_name": "pic-view",
-  "theme_color": "#d9ff00",
-  "background_color": "#000000",
+  "name": "PicView",
+  "short_name": "PicView",
+  "theme_color": "#000000",
+  "background_color": "#d9ff00",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
